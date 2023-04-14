@@ -1,0 +1,37 @@
+@import "../../styles/variaveis.scss";
+@import "../../styles/breakpoints";
+
+.box{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 999;
+    border-radius: 6px;
+    background-color: #ffff;
+    color: #000000;
+    opacity: 0.9;
+    & ul{
+        list-style: none;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+
+    &_link{
+        text-decoration:none;
+        color: #000000;
+        cursor: pointer;
+    }
+
+    &_link li{
+    margin: 0;
+    padding:5px 0;
+        &:hover{
+        background-color: #000000;
+        opacity: 0.8;
+        color: #F8F8FF;
+        border-radius: 5px;
+        text-align: center;
+        }
+    }
+    
+}

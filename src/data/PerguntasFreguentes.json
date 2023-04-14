@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "titulo" : "O que é uma ouvidoria?",
+        "contexto" : "Ouvidoria é um espaço em que você pode apresentar sugestões, elogios, solicitações, reclamações e denúncias. E a Ouvidoria Pública é uma espécie de “ponte” entre você e a Administração Pública (que são os órgãos, entidades e agentes públicos que trabalham nos diversos setores do governo federal, estadual e municipal). A Ouvidoria recebe as manifestações dos cidadãos, analisa, orienta e encaminha às áreas responsáveis pelo tratamento ou apuração do caso. Além disso, a partir das informações trazidas pelos cidadãos, a Ouvidoria pode identificar melhorias, propor mudanças, assim como apontar situações irregulares no órgão ou entidade."
+    },
+    {
+        "id" : 2,
+        "titulo" : "O que é uma manifestação?",
+        "contexto" : "Manifestar é o ato de expor, apresentar, declarar, tornar visível, publicar. A manifestação é uma forma de o cidadão expressar para a Ouvidoria seus anseios, angústias, dúvidas, opiniões. Assim, pode auxiliar o Poder Público a aprimorar a gestão de políticas e serviços, ou a combater a prática de atos ilícitos."
+    },
+    {
+        "id" : 3,
+        "titulo" : "Quais são os tipos de manifestação?",
+        "contexto" : "SUGESTÃO: proposição de ideia ou formulação de proposta de aprimoramento de políticas e serviços prestados pela Administração Pública federal; ELOGIO: demonstração ou reconhecimento ou satisfação sobre o serviço oferecido ou atendimento recebido; SOLICITAÇÃO: requerimento de adoção de providência por parte da Administração; RECLAMAÇÃO: demonstração de insatisfação relativa a serviço público; e DENÚNCIA: comunicação de prática de ato ilícito cuja solução dependa da atuação de órgão de controle interno ou externo."
+    },
+    {
+        "id" : 4,
+        "titulo" : "Como posso fazer uma manifestação?",
+        "contexto" : "A manifestação pode ser feita de forma presencial, pela Internet, por carta, ou por telefone, dependendo da ouvidoria de seu interesse. Para saber qual o tipo de atendimento utilizado, consulte a lista disponível no menu Relação de Ouvidorias. As ouvidorias dos estados de Minas Gerais, Bahia, Distrito Federal, Mato Grosso e de alguns municípios utilizam o número 162 para atendimento telefônico."
+    }
+]

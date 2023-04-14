@@ -1,0 +1,39 @@
+@import "../../styles/variaveis.scss";
+@import "../../styles/breakpoints";
+
+.modal_contato{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    outline: none;
+    border: 4px solid  #1976D2;
+    color: #000;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 4% auto;
+    width: 40%;
+    min-width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    animation: scale-in 1s;
+    text-align: center;
+    @media(max-width: $mobile) {
+        width: 90%;
+    }
+    .modal_buttom{
+        position: relative;
+        left: 180px;
+    }
+}
+
+@keyframes scale-in{
+    0%{
+        transform: translateY(-100%) scale(0);
+        opacity: 0;
+    }
+    100%{
+        tranform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+}

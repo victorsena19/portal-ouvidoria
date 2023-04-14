@@ -1,0 +1,159 @@
+@import "../../styles/variaveis.scss";
+@import "../../styles/breakpoints";
+
+.div_phone{
+    display: flex;
+    justify-content: center;
+    .phone{
+        position: relative;
+        top: 20px;
+        margin: 0 7px;
+    }
+}
+
+.toolbar{
+    display: flex;
+    justify-content: end;
+    &_box{
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
+        @media (max-width: $desktop_sm) {
+            display: none;
+        }
+        &:hover{
+            padding: 2px;
+            background-color: #76c5d8;
+            border-radius: 2px;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    &_menuIcon{
+        display: none;
+        cursor: pointer;
+        @media (max-width: $desktop_sm) {
+            display: block;
+        }
+    }
+
+}
+.container{
+    border-top: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+
+    @media (max-width: $desktop_xsm) {
+        display:block;
+    }
+
+    &_box{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        top: 28px;
+        img{
+            margin-right: 15px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .form{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        bottom: 35px;
+        @media (max-width: $desktop_md) {
+            float: right; 
+        }
+        @media (max-width: $desktop_xsm) {
+            float: none; 
+        }
+        @media(max-width: $mobile) {
+            display: block;
+            width: 100%;
+        }
+        &_box{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            bottom: 32px;
+            @media (max-width: $desktop_md) {
+                display:block;
+            }
+            @media (max-width: $desktop_xsm) {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                top: 50px;
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+            @media (max-width: $mobile) {
+                display: block;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            &_box{
+                padding-left: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 0 10px;
+
+                @media(max-width: $desktop_md) {
+                    padding: 5px 0; 
+                }
+
+                @media(max-width: $desktop_xsm){
+                    padding: 7px 5px;
+                }
+
+                @media(max-width: $mobile){
+                    display: block;
+                    width: 100%;
+                    margin: 0;
+                    padding: 5px 0;
+                }
+            }
+        }
+        &_button{
+            @media (max-width: $desktop_md) {
+                width: 230px;
+            }
+            @media (max-width: $desktop_xsm) {
+                margin-top: 0px;
+                width: 100%;
+            }
+        }
+        &_lockIcon{
+            @media (max-width: $desktop_md) {
+                font-size: 45px;
+            }
+            @media (max-width: $desktop_xsm) {
+                font-size: 45px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+}
+
+.Rodape {
+    bottom:0;
+    width: 100%;
+    position: relative;
+    background-color: #F8F8FF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+    line-height: 20px;
+}

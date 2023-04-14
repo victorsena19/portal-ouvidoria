@@ -1,0 +1,51 @@
+[
+    {
+        "id" : 1,
+        "title" : "Elogio",
+        "descricao" : "Expresse se você está satisfeito com um atendimento",
+        "icon" : "../../imagens/positivo.png",
+        "cor" : "#00B863",
+        "alt" : "Elogio"
+    },
+    {
+        "id" : 2,
+        "title" : "Sugestão",
+        "descricao" : "Envie uma ideia ou proposta de melhoria dos serviçps públicos",
+        "icon" : "../../imagens/dois-balao-conversa.png",
+        "cor" : "#02AED8",
+        "alt" : "Sugestao"
+    },
+    {
+        "id" : 3,
+        "title" : "Solicitação",
+        "descricao" : "Peça um atendimento ou uma prestação de serviço",
+        "icon" : "../../imagens/check-computer.png",
+        "cor" : "#006BAB",
+        "alt" : "Solicitacao"
+    },
+    {
+        "id" : 4,
+        "title" : "Reclamação",
+        "descricao" : "Manisfeste sua insatisfação com um serviço público",
+        "icon" : "../../imagens/negativo.png",
+        "cor" : "#DB9017",
+        "alt" : "Reclamacao"
+    },
+    {
+        "id" : 5,
+        "title" : "Denúncia",
+        "descricao" : "Comunique um ato ilícito praticado contra a administração pública",
+        "icon" : "../../imagens/megaphone.png",
+        "cor" : "#DF5443",
+        "alt" : "Denuncia"
+    },
+    {
+        "id" : 6,
+        "title" : "Assédio",
+        "descricao" : "Registre um caso de Assédio ou Discriminação",
+        "icon" : "../../imagens/mao.png",
+        "cor" : "#800003",
+        "alt" : "Assedio e Discriminacao"
+    }
+
+]

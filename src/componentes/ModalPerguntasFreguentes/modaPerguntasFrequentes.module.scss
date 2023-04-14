@@ -1,0 +1,94 @@
+@import "../../styles/variaveis.scss";
+@import "../../styles/breakpoints";
+
+.modal_perguntas_frequentes{
+    outline: none;
+    border: 4px solid  #1976D2;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 60%;
+    max-height: 85%;
+    min-width: 400px;
+    overflow: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    animation: scale-in 1s;
+    .modal_buttom{
+        top: 5px;
+        position: relative;
+        left: 89%;
+        @media(max-width: $desktop_md) {
+            left: 86%;
+        }
+        @media(max-width: $desktop_sm) {
+            left: 85%;
+        }
+
+        @media(max-width: $desktop_xsm) {
+            left: 81%;
+        }
+
+        @media(max-width: $mobile) {
+            left: 77%;
+        }
+    }
+    &::-webkit-scrollbar{
+        width: 10px;
+
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #A9A9A9;
+        border-radius: 10px;
+        margin: 0 2px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #363636;
+        border-radius: 10px;
+    }
+    div h2{
+        border-bottom: 2px solid #363636;
+    }
+
+}
+
+@keyframes scale-in{
+    0%{
+        transform: translateY(-100%) scale(0);
+        opacity: 0;
+    }
+    100%{
+        tranform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+}
+
+.pf{
+    border: 2px solid #363636;
+    border-radius: 5px;
+    margin: 5px 0;
+
+    &_titulo{
+        color: #fff;
+        display: table;
+        width: 100%;
+        vertical-align: middle;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #1976D2;
+        cursor: pointer;
+        h3{
+            padding-left: 20px ;
+        }
+    }
+    &_contexto{
+        padding: 0 15px;
+        display: none;
+        &-ativo{
+            padding: 0 15px;
+            display: block;
+        }
+    }
+}

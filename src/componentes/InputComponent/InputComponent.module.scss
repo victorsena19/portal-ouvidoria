@@ -1,0 +1,25 @@
+
+.input{
+    position: relative;
+    .inputFor{
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-radius: 5px;
+        outline:none;
+        padding: 10px 0px;
+        padding-left: 35px;
+        border-color:#F5FFFA; 
+        width: 93%; 
+        &:focus{
+            border: 3px solid #13034b;
+           
+        }
+    }
+    .icon{
+        position: absolute;
+        top:0;
+        left: 0;
+        color: #1976D2;
+        padding: 9px 6px;
+    }
+}

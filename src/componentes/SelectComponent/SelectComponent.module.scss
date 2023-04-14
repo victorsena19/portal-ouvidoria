@@ -1,0 +1,21 @@
+.select{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+    label{
+        letter-spacing: 1px;
+        margin: 5px 3%;
+        font-size: 20px;
+    }
+    select{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-size: medium;
+        width: 95%;
+        border: 2px solid #1976D2;
+        border-radius: 5px;
+        padding: 10px 2px;
+        margin: 0 auto;
+    }
+}
