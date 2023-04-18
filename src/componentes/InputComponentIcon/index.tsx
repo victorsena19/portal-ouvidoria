@@ -1,4 +1,4 @@
-import styled from './InputComponent.module.scss'
+import styled from './InputComponentIcon.module.scss';
 import { Icon } from '@mui/material';
 import { ComponentType } from 'react';
 interface Props{

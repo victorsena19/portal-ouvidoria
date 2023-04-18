@@ -16,7 +16,7 @@ import {Link, Outlet} from 'react-router-dom';
 import FormControl from '@mui/material/FormControl';
 import MenuIcon from '@mui/icons-material/Menu';
 import brasao from '../../imagens/Brasao.png';
-import InputComponent from '../../componentes/InputComponent';
+import InputComponent from '../../componentes/InputComponentIcon';
 import style from './PaginaBase.module.scss';
 import { useEffect, useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -91,13 +91,13 @@ export default function PaginaBase(){
                     <Box className={style.toolbar_box}>
                         <Icon component={HomeIcon}/>
                         <Typography variant="h6" marginLeft={1} marginRight={5}>
-                        <Link style={{textDecoration: 'none', color:'#fff'}} to="/home">Inicio</Link>
+                        <Link style={{textDecoration: 'none', color:'#fff'}} to="/">Inicio</Link>
                         </Typography>
                     </Box>
                     <Box className={style.toolbar_box}>
                         <Icon component={PersonAddAlt1Icon}/>
                         <Typography variant="h6" marginLeft={1} marginRight={5}>
-                        <Link style={{textDecoration: 'none', color:'#fff'}} to="/home">Cadastre-se</Link>
+                        <Link style={{textDecoration: 'none', color:'#fff'}} to="/cadastro">Cadastre-se</Link>
                         </Typography>
                     </Box>
                     <Box className={style.toolbar_box}>
