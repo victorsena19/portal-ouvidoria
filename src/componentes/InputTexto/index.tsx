@@ -1,4 +1,4 @@
-import style from './InputMini.module.scss';
+import style from './InputTexto.module.scss';
 
 interface Props{
     label?: string;
@@ -11,9 +11,9 @@ interface Props{
     className?: string;
 }
 
-export default function InputMini({label, htmlFor, type, id, value, placeholder, required, className}: Props){
+export default function InpuTexto({label, htmlFor, type, id, value, placeholder, required, className}: Props){
     return(
-        <div id={style['input-pequeno']} className={className}>
+        <div id={style['input-texto']} className={className}>
             <label htmlFor={htmlFor}>{label}</label>
             <input type={type} 
                 id={id}

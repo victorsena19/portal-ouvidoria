@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import modalPerguntasFrequentesReducer from './reducers/modalPerguntasFrequentesReducer';
+import ordenadorReducer from './reducers/ordenadorReducer';
 const store = configureStore({
     reducer: {
         modalPerguntasFrequentes: modalPerguntasFrequentesReducer,
+        ordenador: ordenadorReducer,
     }
 })
 

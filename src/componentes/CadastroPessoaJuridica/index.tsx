@@ -1,29 +1,21 @@
-import InputGrande from 'componentes/InputGrande';
+import InputTexto from 'componentes/InputTexto';
 import style from './CadastroPessoaJuridica.module.scss';
-import InputMedio from 'componentes/InputMedio';
-import InputMini from 'componentes/InputMini';
-import InputPequeno from 'componentes/InputPequeno';
 
 export default function CadastroPessoaJuridica(){
     return(
-        <div>
-            <div>
-                <InputGrande/>
-                <InputMedio/>
-                <InputMini/>
+        <div className={style.conteiner}>
+            <div className={style.box}>
+            <InputTexto label='Nome'/>
             </div>
-            <div>
-                <InputPequeno/>
-                <InputPequeno/>
-                <InputMini/>
-                <InputMedio/>
+            <div className={style.box}>
+            <InputTexto label='Nome'/>
             </div>
-            <div>
+            <div className={style.box}>
                 [aqui vai um input select]
             </div>
-            <div>
-                <InputGrande/>
-                <InputGrande/>
+            <div className={style.box}>
+                <InputTexto label='Nome'/>
+                <InputTexto label='Nome'/>
             </div>
         </div>
     )

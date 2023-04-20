@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "tipoPessoa": "Pessoa Física",
+        "value": "pessoaFisica"
+    },
+    {
+        "id": 2,
+        "tipoPessoa": "Pessoa Jurídica",
+        "value": "pessoaJuridica"
+    }
+]
