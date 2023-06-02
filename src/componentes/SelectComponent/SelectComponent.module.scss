@@ -9,6 +9,7 @@
         font-size: 20px;
     }
     select{
+        text-align: center;
         font-size: 15px;
         letter-spacing: 1px;
         font-size: medium;
@@ -17,5 +18,9 @@
         border-radius: 5px;
         padding: 10px 2px;
         margin: 0 auto;
+        &:focus{
+            outline: none;
+            box-shadow:  0 0 8px #66afe9;
+        }
     }
 }

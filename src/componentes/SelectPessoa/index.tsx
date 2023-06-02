@@ -1,21 +1,45 @@
-import { useState } from 'react';
-import style from './SelectPessoa.module.scss';
-import pessoa from '../../data/Pessoa.json';
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
+import { ReactNode } from 'react';
+import { Select, SelectChangeEvent } from '@mui/material';
 
 interface Props{
-    id?: string;
+    onChange: (event: SelectChangeEvent<string>, child: ReactNode) => void;
+    label?: string;
+    name?: string;
+    value?: string;
+    itens?: { label: string; value: string }[];
+    required?: boolean;
+    children: ReactNode;
+    id: string;
+    className?: string;
 }
 
-export default function SelectPessoa({id}:Props) {
-    const [aberto, setAberto] = useState(false);
-    const [ordenador, setOrdenador] = useState("");
-    const pessoaFisica = pessoa.find(opcao => opcao.id === 1)?.tipoPessoa;
-    const nomeOrdenador = ordenador && pessoa.find(opcao => opcao.value === ordenador)?.tipoPessoa;
+export default function SelectPessoa({id, className, label, children, value, name, onChange}:Props) {
     return (
-        <div id={style.select}>
+        <div style={{width:"100%", marginRight:"10px"}}>
+        <Select 
+            fullWidth
+            className={className}
+            id={id}
+            labelId={name}
+            value={value}
+            onChange={onChange}
+            label={label}
+        >
+            {children}
+        </Select>
+    </div>
+    )
+}
+
+
+
+/*
+const [aberto, setAberto] = useState(false);
+const pessoaFisica = pessoa.find(opcao => opcao.id === 1)?.tipoPessoa;
+const nomeOrdenador = ordenador && pessoa.find(opcao => opcao.value === ordenador)?.tipoPessoa;
+ <div id={style.select}>
             <span>Tipo de Pessoa*</span>
-            <button id={id} className={style.ordenador} onClick={() => setAberto(!aberto)}
+            <button type='button' className={style.ordenador} onClick={() => setAberto(!aberto)}
                 onBlur={() => setAberto(false)}>
                 <span>{nomeOrdenador || pessoaFisica}</span>
                 {aberto ? <MdKeyboardArrowUp className={style.arrow} size={20} /> : <MdKeyboardArrowDown className={style.arrow} size={20} />}
@@ -32,5 +56,4 @@ export default function SelectPessoa({id}:Props) {
                 </div>
             </button>
         </div>
-    )
-}
+*/

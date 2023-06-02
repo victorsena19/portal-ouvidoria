@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  display: "flex";
+  flex-wrap: "wrap";
+  margin-left: 10px;
+}
+
+#textField {
+  margin-left: spacing(1);
+  margin-right: spacing(1);
+  width: 200;
+}

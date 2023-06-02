@@ -1,7 +1,7 @@
 import { createSlice,  PayloadAction} from "@reduxjs/toolkit";
 
 interface PFGlobal{
-    ordenador: string;
+    ordenador?: string;
 }
 
 const initialState: PFGlobal = {

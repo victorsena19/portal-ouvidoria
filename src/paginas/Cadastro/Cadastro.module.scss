@@ -1,7 +1,7 @@
-.conteiner{
+.container{
     width: 100%;
     .box{
-        width: 70%;
+        width: 80%;
         margin:0 auto;
         h6{
             padding: 0px 10px;
@@ -9,13 +9,11 @@
         }
         .centralizar{
             color: #1976D2;
-            width: 58.8rem;
             text-align: center;
             border-bottom: 2px solid #CCCCCC;
         }
         .central{
             padding: 0px 10px;
-            width: 57.45rem;
             border-bottom: 2px solid #CCCCCC;
         }
     }
@@ -27,5 +25,18 @@
     }
     .campogrande{
         width: 32.9rem;
+    }
+    .box_button{
+        width: 70%;
+        margin: 0 auto;
+        
+        .button{
+            width: 58.8rem;
+            padding-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+        }
+        
     }
 }

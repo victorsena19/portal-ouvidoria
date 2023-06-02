@@ -22,10 +22,17 @@
             display: none;
         }
         &:hover{
-            padding: 2px;
-            background-color: #76c5d8;
+            color: #1976D2;
+            background-color: #fff;
             border-radius: 2px;
-            border-bottom: 2px solid #fff;
+        }
+        &:hover .link{
+            color: #1976D2;
+        }
+        .link{
+            width: 100%;
+            color: #fff;
+            text-decoration: none;
         }
     }
     &_menuIcon{
@@ -107,7 +114,6 @@
                 flex-wrap: wrap;
                 align-items: center;
                 margin: 0 10px;
-
                 @media(max-width: $desktop_md) {
                     padding: 5px 0; 
                 }

@@ -1,0 +1,28 @@
+
+.box_button_cancelar{
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea2c13;
+    color: #fff;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
+        background-color: #DF5443;
+        color: #fff;
+        }
+}
+
+.link{
+    text-decoration: none;
+    &:visited, &:hover, &:link, &:active{
+        text-decoration: none;
+    }
+}

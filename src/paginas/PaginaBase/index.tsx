@@ -91,19 +91,19 @@ export default function PaginaBase(){
                     <Box className={style.toolbar_box}>
                         <Icon component={HomeIcon}/>
                         <Typography variant="h6" marginLeft={1} marginRight={5}>
-                        <Link style={{textDecoration: 'none', color:'#fff'}} to="/">Inicio</Link>
+                        <Link className={style.link} to="/">Inicio</Link>
                         </Typography>
                     </Box>
                     <Box className={style.toolbar_box}>
                         <Icon component={PersonAddAlt1Icon}/>
                         <Typography variant="h6" marginLeft={1} marginRight={5}>
-                        <Link style={{textDecoration: 'none', color:'#fff'}} to="/cadastro">Cadastre-se</Link>
+                        <Link className={style.link} to="/cadastro">Cadastre-se</Link>
                         </Typography>
                     </Box>
                     <Box className={style.toolbar_box}>
                         <Icon component={InsertDriveFileIcon}/>
                         <Typography variant="h6"  marginLeft={1} marginRight={5}>
-                        <div style={{textDecoration: 'none', color:'#fff'}} onClick={abrirModalTermosUso}>Termos de Uso</div>
+                        <div className={style.link} onClick={abrirModalTermosUso}>Termos de Uso</div>
                         </Typography>
                     </Box>
                     {modalTermosUso && (
@@ -116,7 +116,7 @@ export default function PaginaBase(){
                     <Box  className={style.toolbar_box}>
                         <Icon component={PhoneIcon}/>
                         <Typography variant="h6"  marginLeft={1} marginRight={5}>
-                        <div style={{textDecoration: 'none', color:'#fff'}} onClick={abrirModalContato}>Contato</div>
+                        <div className={style.link} onClick={abrirModalContato}>Contato</div>
                         </Typography>
                     </Box>
                     {modalContato && (
@@ -129,7 +129,7 @@ export default function PaginaBase(){
                     <Box className={style.toolbar_box}>
                         <Icon component={HelpIcon}/>
                         <Typography variant="h6"  marginLeft={1}>
-                        <div style={{textDecoration: 'none', color:'#fff'}} onClick={abrirModalPerguntasFrequentes} >Perguntas Frequentes</div>
+                        <div className={style.link} onClick={abrirModalPerguntasFrequentes} >Perguntas Frequentes</div>
                         </Typography>
                     </Box>
                     {modalPerguntasFrequentes && (
@@ -145,6 +145,7 @@ export default function PaginaBase(){
                     </Box>
                     {isOpen && (<Menu menuRef={menuRef}
                         onClick={fecharMenu}
+                        fecharMenu={fecharMenu}
                         abrirTermosUso={abrirModalTermosUso}
                         abrirContato={abrirModalContato}
                         abrirPerguntasFrequentes={abrirModalPerguntasFrequentes}

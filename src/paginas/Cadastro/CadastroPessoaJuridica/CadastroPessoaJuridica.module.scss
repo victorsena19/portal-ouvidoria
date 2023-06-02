@@ -1,0 +1,31 @@
+.container{
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    .campogrande{
+        margin-right: 10px;
+        width: 100%;
+    }
+    .campomedio{
+        margin-right: 10px;
+        width: 33,33%; 
+    }
+    .campopequeno{
+        margin-right: 10px;
+        width: 25%;
+    }
+    .campomini{
+        margin-right: 10px;
+        width: 11.4rem;
+    }
+    .campomicro{
+        margin-right: 10px;
+        width: 7rem;
+    }
+}

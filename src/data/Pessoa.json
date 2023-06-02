@@ -2,11 +2,11 @@
     {
         "id": 1,
         "tipoPessoa": "Pessoa Física",
-        "value": "pessoaFisica"
+        "value": "1"
     },
     {
         "id": 2,
         "tipoPessoa": "Pessoa Jurídica",
-        "value": "pessoaJuridica"
+        "value": "2"
     }
 ]
