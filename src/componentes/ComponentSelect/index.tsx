@@ -2,6 +2,7 @@ import { ErrorMessage, Field, FieldInputProps, useField } from 'formik';
 import { FormControl, FormHelperText, InputLabel, MenuItem, Select } from '@mui/material';
 import { ReactNode } from 'react';
 import React from 'react';
+import ComponentMsmErro from 'componentes/ComponentMsmErro';
 
 interface MaterialSelectProps extends FieldInputProps<string> {
     errorString: string;
@@ -50,7 +51,7 @@ const MaterialSelect = ({className, errorString, label, children, value, name}: 
                 as={MaterialSelect}
                 name={name}
                 label={label}
-                errorString={<ErrorMessage name={name} />}
+                errorString={<ErrorMessage name={name}  component={ComponentMsmErro}/>}
                 >
                 {itens.map(iten => (
                     <MenuItem key={iten.value} value={iten.value}>

@@ -39,7 +39,7 @@ const Cadastro: React.FC = () => {
     });
 
     const handleBlurCep = async (event: React.FocusEvent<HTMLInputElement>, setFieldValue: FormikProps<IFormulario>['setFieldValue']) => {
-        const cep = event.target.value.replace('-', '');
+        const cep = event.target.value.replace(/[.-]/g, "");
         try {
             const { data } = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
             console.log(data);
@@ -58,7 +58,6 @@ const Cadastro: React.FC = () => {
         alert("formulario submetido");
         console.log(values);
         resetForm();
-        window.location.reload();
     };
 
     return (

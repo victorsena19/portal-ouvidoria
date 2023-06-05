@@ -17,7 +17,11 @@ interface ComponentDateProps {
 }
 
 const MaterialDate: React.FC<MaterialDateProps> = ({ className, name, label }) => {
-  const [field] = useField(name);
+  const [field, meta, helpers] = useField(name);
+  const mudanca = (event: { target: { value: string } }) => {
+    helpers.setValue(event.target.value)
+  }
+
   return (
     <div className={style.container}>
       <TextField
@@ -31,7 +35,7 @@ const MaterialDate: React.FC<MaterialDateProps> = ({ className, name, label }) =
           shrink: true
         }}
         value={field.value}
-        onChange={field.onChange}
+        onChange={mudanca}
       />
     </div>
   );

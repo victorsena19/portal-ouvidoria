@@ -10,6 +10,7 @@ import { setOrdenador } from 'store/reducers/ordenadorReducer';
 import { RootState } from 'store';
 import ButtonConfirmar from 'componentes/ButtonConfirmar';
 import ButtonCancelar from 'componentes/ButtonCancelar';
+import ComponentMask from 'componentes/ComponentMask';
 
 interface CadastroPessoaJuridicaProps {
     formik: FormikProps<IFormulario>;
@@ -41,6 +42,7 @@ const CadastroPessoaJuridica: React.FC<CadastroPessoaJuridicaProps> = ({ ...prop
                     )}
                 </SelectPessoa>
                 <ComponentText
+                    max={150}
                     type="text"
                     label="Razão Social*"
                     name="nome_razao"
@@ -48,32 +50,38 @@ const CadastroPessoaJuridica: React.FC<CadastroPessoaJuridicaProps> = ({ ...prop
             </div>
 
             <div className={style.box}>
-                <ComponentText
+                <ComponentMask
+                    estilo={{marginRight:"10px"}}
                     className={style.campomedio}
-                    type="text"
+                    mask={"99.999.999/9999-99"}
                     label="CNPJ*"
                     name="cpf_cnpj"
+                    id="cpf_cnpj"
                 />
-                <ComponentText
+                <ComponentMask
+                    estilo={{marginRight:"10px"}}
                     className={style.campomedio}
-                    type="text"
+                    mask={"999.999.999.999"}
                     label="Inscrição Estadual*"
                     name="rg_ie"
+                    id="rg_ie"
                 />
-                <ComponentText
-                    type="text"
+                <ComponentMask
+                    mask={"(99)99999-9999"}
                     label="Telefone*"
                     name="telefone"
+                    id="telefone"
                 />
             </div>
 
             <div className={style.box}>
-
-                <ComponentText
+                <ComponentMask
+                    estilo={{marginRight:"10px"}}
                     className={style.campomedio}
-                    type="text"
+                    mask="99.999-999"
                     label="CEP*"
                     name="cep"
+                    id="cep"
                     onBlur={props.handleBlurCep}
                 />
                 <ComponentText
@@ -96,6 +104,7 @@ const CadastroPessoaJuridica: React.FC<CadastroPessoaJuridicaProps> = ({ ...prop
             </div>
             <div className={style.box}>
                 <ComponentText
+                    max={100}
                     className={style.campogrande}
                     type="text"
                     label="Lagradouro*"

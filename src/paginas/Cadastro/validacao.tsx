@@ -19,7 +19,7 @@ const validarFormularioPF = Yup.object().shape({
         .required("Campo obrigatório"),
      
     telefone: Yup.string()
-        .matches(/\([0-9]{2}\)[0-9]/),
+        .required("Campo obrigatório"),
 
     celular: Yup.string()
         .required("Campo obrigatório")
@@ -43,8 +43,9 @@ const validarFormularioPF = Yup.object().shape({
     logradouro: Yup.string()
         .required("Campo obrigatório"),
 
-    numero: Yup.string()
-        .required("Campo obrigatório"),
+    numero: Yup.number()
+        .required("Campo obrigatório")
+        .integer("O campo deve ser número inteiro"),
     email: Yup.string()
         .email("Email inválido")
         .required("Campo obrigatório"),
